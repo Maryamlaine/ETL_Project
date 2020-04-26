@@ -25,7 +25,7 @@ The ERD Schema Script can be found in sql file (see [ERD_Schema_Script.txt](sql/
 o	disney_movies.csv - ( https://www.kaggle.com/prateekmaj21/disney-movies )
 o	IMDB.com ( https://www.imdb.com/list/ls068561553/ )
 
-# TRANSFORM
+# Transform
 1.	Box Office:
 
 • Create unique box_df from disney_df with income_id and gross_income
