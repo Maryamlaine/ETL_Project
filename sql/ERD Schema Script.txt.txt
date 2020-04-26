@@ -1,0 +1,42 @@
+movies
+-
+movie_id INT PK 
+income_id INT FK - boxoffice.income_id
+movie_title VARCHAR
+duration VARCHAR
+genre VARCHAR
+release_date date
+
+reviews
+-
+review_id INT PK
+imdb_rating FLOAT
+number_of_reviews INT
+movie_id INT FK >- movies.movie_id
+
+movie_directors
+-
+movie_id INT PK FK >- movies.movie_id
+director_id INT PK FK >- directors.director_id
+
+boxoffice
+-
+income_id INT PK
+gross_income FLOAT
+
+directors
+-
+director_id INT PK 
+first_name VARCHAR
+last_name VARCHAR
+
+movie_actors
+-
+movie_id INT PK FK >- movies.movie_id
+actor_id INT PK FK >- voice_actors.actor_id
+
+voice_actors
+-
+actor_id INT PK
+first_name VARCHAR
+last_name VARCHAR
