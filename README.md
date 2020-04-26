@@ -27,9 +27,11 @@ o	IMDB.com ( https://www.imdb.com/list/ls068561553/ )
 
 # TRANSFORM
 1.	Box Office:
+
 • Create unique box_df from disney_df with income_id and gross_income
 
 2.	Movie:
+
 • Merge disney_df and rating_df on the movie's title
 • Fill null values with placeholders 
 • Create unique new_movie_df from movie_df with movie_id, Title, release_date, genre, Duration, income_id
@@ -38,6 +40,7 @@ o	IMDB.com ( https://www.imdb.com/list/ls068561553/ )
 • Create unique genre_sum dataframe with genre and total_gross sorted in descending order for further lookups
 
 3.	Review:
+
 • Merge disney_df and rating_df on the movie's title
 • Create unique new_rating_df from movie_df with rating_id, Title, IMDB_rating and Number_of_Reviews
 • Drop null values
@@ -47,6 +50,7 @@ o	IMDB.com ( https://www.imdb.com/list/ls068561553/ )
 • Create unique highest_reviews_movie dataframe with Title and IMDB_rating sorted in descending order for further lookups
 
 4.	Director:
+
 • Create unique new_director_df from disney_director_df with director_id, title, director 
 • Split director's full name into first and last
 • Change column labels
@@ -54,9 +58,11 @@ o	IMDB.com ( https://www.imdb.com/list/ls068561553/ )
 • Group directors by number of titles in descending order
 
 5. Movie directors
+
 • Create unique dataframe movie_director_df to connect Directors table with Movie table
 
 6.	Actors:
+
 • Create unique new_actor_df from disney_actor_df with actor_id and cast
 • Split actor's full name into first and last
 • Change column labels
@@ -64,10 +70,12 @@ o	IMDB.com ( https://www.imdb.com/list/ls068561553/ )
 • Group actors by number of titles in descending order
 
 7. Movie actors
+
 • Create unique dataframe movie_actor_df to connect Actors table with Movie table
 
 
 # Load
+
 • Now, we can load the data into PostgresSQL database (Make sure all tables are created)
 • A test sql file combining all 7 tables shows it worked correctly.
 ************
