@@ -76,6 +76,7 @@ o	IMDB.com ( https://www.imdb.com/list/ls068561553/ )
 
 # Load
 
-• Now, we can load the data into PostgresSQL database (Make sure all tables are created)
+• Now, we can load the data into the PostgresSQL database (Make sure all tables are created).
+
 • A test sql file combining all 7 tables shows it worked correctly.
-************
+
